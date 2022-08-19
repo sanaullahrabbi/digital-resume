@@ -1,0 +1,115 @@
+@import './base';
+@import './theme';
+
+.container-main {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1em;
+}
+
+.section-page {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.wrapper-hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
+
+	img {
+		max-width: 200px;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		background: #2a2a2a;
+		border-radius: 50%;
+	}
+	#username {
+		font-size: 2.5em;
+		line-height: 1em;
+	}
+	#bio,
+	a {
+		font-weight: 300;
+	}
+	#email {
+		color: var(--mainTextColor);
+		display: flex;
+		align-items: center;
+	}
+}
+
+#socials-list {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 1em;
+	flex-wrap: wrap;
+	a {
+		color: var(--secondaryTextColor);
+		transition: 0.3s;
+
+		font-size: 0.9em;
+		&:hover {
+			color: var(--mainLinkColor);
+		}
+	}
+}
+
+.qualifications-list {
+	padding-left: 1em;
+
+	li {
+		list-style: none;
+	}
+}
+
+.wrapper-techstacks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	font-size: 0.9em;
+}
+
+.card-techstack {
+	border: 1px solid var(--mainBorderColor);
+	padding: 0.5em 1em;
+}
+
+.line-break {
+	background-color: var(--mainBorderColor);
+	border-bottom: 1px solid var(--mainBorderColor);
+}
+
+.card-work-history {
+	border-left: 1px solid var(--mainBorderColor);
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding-left: 2em;
+	li {
+		list-style-type: circle;
+	}
+}
+
+.card-project {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: 1px solid var(--mainBorderColor);
+	// border-bottom: 1px solid var(--mainBorderColor);
+	a {
+		color: var(--secondaryTextColor);
+		transition: 0.3s;
+		&:hover {
+			color: var(--mainLinkColor);
+		}
+	}
+}
+
+@import './responsive';

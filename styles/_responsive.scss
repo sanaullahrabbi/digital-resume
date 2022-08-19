@@ -1,0 +1,9 @@
+@media screen and (max-width:600px) {
+    .wrapper-hero{
+        flex-direction: column;
+    }
+    .card-work-history{
+        border: none;
+        padding: 0;
+    }
+}
